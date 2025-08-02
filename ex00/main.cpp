@@ -5,30 +5,30 @@
 #include "WrongCat.hpp"
 
 int main() {
-    std::cout << "---- CORRECT ANIMALS ----\n";
+    std::cout << "---- CORRECT ANIMALS ----" << std::endl;
     const Animal* animal = new Animal();
     const Animal* dog = new Dog();
     const Animal* cat = new Cat();
 
-    std::cout << "\nSounds:\n";
+    std::cout << "\nSounds:" << std::endl;
     animal->makeSound();
     dog->makeSound();
     cat->makeSound();
 
-    std::cout << "\nDelete\n";
+    std::cout << "\nDelete" << std::endl;
     delete animal;
     delete dog;
     delete cat;
 
-    std::cout << "\nWrong animal\n";
+    std::cout << "\nWrong animal" << std::endl;
     const WrongAnimal* wrong = new WrongAnimal();
     const WrongAnimal* wrongCat = new WrongCat();
 
-    std::cout << "\nMakeSound\n";
+    std::cout << "\nMakeSound" << std::endl;
     wrong->makeSound();
-    wrongCat->makeSound();  // WrongAnimal::makeSound
+    wrongCat->makeSound();  // WrongAnimal
 
-    std::cout << "\nDelete\n";
+    std::cout << "\nDelete" << std::endl;
     delete wrong;
     delete wrongCat;
 

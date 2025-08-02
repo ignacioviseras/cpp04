@@ -3,15 +3,15 @@
 
 Cat::Cat() : brain(new Brain()) {
     type = "Cat";
-    std::cout << "Cat constructor called\n";
+    std::cout << "Cat constructor called" << std::endl;
 }
 
 Cat::Cat(const Cat& other) : Animal(other), brain(new Brain(*other.brain)) {
-    std::cout << "Cat copy constructor called\n";
+    std::cout << "Cat copy constructor called" << std::endl;
 }
 
 Cat& Cat::operator=(const Cat& other) {
-    std::cout << "Cat assignment operator called\n";
+    std::cout << "Cat assignment operator called" << std::endl;
     if (this != &other) {
         Animal::operator=(other);
         *brain = *other.brain;
@@ -21,11 +21,11 @@ Cat& Cat::operator=(const Cat& other) {
 
 Cat::~Cat() {
     delete brain;
-    std::cout << "Cat destructor called\n";
+    std::cout << "Cat destructor called" << std::endl;
 }
 
 void Cat::makeSound() const {
-    std::cout << "Miau\n";
+    std::cout << "Miau" << std::endl;
 }
 
 void Cat::setIdea(int index, const std::string& idea) {

@@ -2,13 +2,13 @@
 
 WrongCat::WrongCat() {
     type = "WrongCat";
-    std::cout << "WrongCat constructor called\n";
+    std::cout << "WrongCat constructor called" << std::endl;
 }
 
 WrongCat::~WrongCat() {
-    std::cout << "WrongCat destructor called\n";
+    std::cout << "WrongCat destructor called" << std::endl;
 }
 
 void WrongCat::makeSound() const {
-    std::cout << "Meow??? (wrong)\n";
+    std::cout << "Meow??? (wrong)" << std::endl;
 }
