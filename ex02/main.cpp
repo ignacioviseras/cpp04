@@ -44,7 +44,7 @@ int main()
     std::cout << "Original idea: " << original.getIdea(0) << std::endl;
     std::cout << "Copy idea: " << copy.getIdea(0) << std::endl;
 
-    std::cout << "\nDone" << std::endl;
+    std::cout << "\nDestructors" << std::endl;
 
     return 0;
 }

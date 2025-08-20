@@ -7,17 +7,17 @@
 
 int main()
 {
-    std::cout << "=== Creating Animals ===" << std::endl;
+    std::cout << "Creating Animals" << std::endl;
 
     const Animal* j = new Dog();
     const Animal* i = new Cat();
 
-    std::cout << "\n=== Deleting Animals ===" << std::endl;
+    std::cout << "\nDeleting Animals" << std::endl;
 
     delete j; // should not create a memory leak
     delete i;
 
-    std::cout << "\n=== Creating Animal Array ===" << std::endl;
+    std::cout << "\nCreating Animal Array" << std::endl;
 
     Animal* animals[SIZE];
     for (int k = 0; k < SIZE / 2; ++k)
@@ -25,15 +25,15 @@ int main()
     for (int k = SIZE / 2; k < SIZE; ++k)
         animals[k] = new Cat();
 
-    std::cout << "\n=== Making Sounds ===" << std::endl;
+    std::cout << "\nMaking Sounds" << std::endl;
     for (int k = 0; k < SIZE; ++k)
         animals[k]->makeSound();
 
-    std::cout << "\n=== Deleting Animal Array ===" << std::endl;
+    std::cout << "\nDeleting Animal Array" << std::endl;
     for (int k = 0; k < SIZE; ++k)
         delete animals[k];
 
-    std::cout << "\n=== Deep Copy Test ===" << std::endl;
+    std::cout << "\nDeep Copy Test" << std::endl;
 
     Dog original;
     original.setIdea(0, "Play fetch");
@@ -44,7 +44,7 @@ int main()
     std::cout << "Original idea: " << original.getIdea(0) << std::endl;
     std::cout << "Copy idea: " << copy.getIdea(0) << std::endl;
 
-    std::cout << "\n=== Done ===" << std::endl;
+    std::cout << "\nDestructors" << std::endl;
 
     return 0;
 }

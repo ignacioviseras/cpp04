@@ -5,7 +5,7 @@
 #include "WrongCat.hpp"
 
 int main() {
-    std::cout << "---- CORRECT ANIMALS ----" << std::endl;
+    std::cout << "CORRECT ANIMALS" << std::endl;
     const Animal* animal = new Animal();
     const Animal* dog = new Dog();
     const Animal* cat = new Cat();
