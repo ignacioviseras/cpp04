@@ -2,7 +2,7 @@ NAME = a.out
 CXX = g++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 SRCS =	main.cpp \
-		Animal.cpp \
+		AAnimal.cpp \
 		Cat.cpp \
 		Dog.cpp \
 		WrongAnimal.cpp \
